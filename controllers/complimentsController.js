@@ -22,7 +22,7 @@ var complimentsController = {
   // edit action code goes here...
   edit: function(request,res){
     res.render('compliments/edit.hbs',{
-      compliment: Compliment.find([request.params.id])
+      // compliment: Compliment.find([request.params.id])
     });
   },
   // update action code goes here...
