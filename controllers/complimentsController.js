@@ -24,6 +24,13 @@ var complimentsController = {
     res.render('compliments/edit.hbs',{
       compliment: Compliment.find([request.params.id])
     });
+  },
+  // update action code goes here...
+  update: function(req,res){
+    var compliment = Compliment.update(req.body.compliment)
+    // redirect to compliment
+    res.redirect("/compliments")
+    });
   }
  // update action code goes here...
 }
